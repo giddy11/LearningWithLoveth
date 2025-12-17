@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position: Relative Demo</title>
+    <style>
+       body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 150px;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 1.2;
+    background-color: #f7f7f7;
+}
+
+/* THE KEY STYLES FOR POSITION: RELATIVE */
+.box-2 {
+    /* 1. Set the position type */
+    position: relative; 
+    
+    /* 2. Apply the offset */
+    top: 10px; /* Moves it down from its original spot */
+    left: 20px; /* Moves it right from its original spot */
+    
+    background-color: #a6d9e8; /* Highlight the relative box */
+    border: 2px solid #007bff;
+}
+
+.box-3 {
+    /* Notice this box doesn't move up to fill the space 
+       where Box 2 visually moved *from*. */
+    background-color: #fffacd;
+}
+    </style>
+</head>
+<body>
+
+    <div class="box box-1">Box 1 (Normal Flow)</div>
+    <div class="box box-2">
+        Box 2 (Relative)<br>
+        top: 10px<br>
+        left: 20px
+    </div>
+    <div class="box box-3">Box 3 (Normal Flow)</div>
+
+</body>
+</html>

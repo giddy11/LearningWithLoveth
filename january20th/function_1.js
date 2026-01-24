@@ -14,31 +14,28 @@
  * 
  */
 
+function PrintLoveth(){
+  console.log("Loveth")
+  console.log("Loveth")
+  console.log("Loveth")
+  console.log("Loveth")
+  console.log("Loveth")
+  console.log("Loveth")
+}
+
 //Project one
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
+console.log("THIS IS FROM PROJECT ONE")
+PrintLoveth()
 
 // Project 2
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
+console.log("THIS IS FROM PROJECT TWO")
+PrintLoveth();
 
 console.log("Hello how you dey")
 
 
 //Project 3
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
-console.log("Loveth")
+console.log("THIS IS FROM PROJECT THREE")
+PrintLoveth();
 
 console.log("I am from nigeria.")

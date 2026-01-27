@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .modal-overlay {
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .modal-content {
+    background-color: yellow;
+    position: relative;
+  }
+</style>
+<body>
+  <!-- Z-Index & Stacking Context 
+      It controls which elements appears on top of others (like layers in photoshop) 
+  
+  -->
+
+  <div class="modal-overlay">
+    Component 1
+  </div>
+
+  <div class="modal-content">
+    Component 2
+  </div>
+</body>
+</html>

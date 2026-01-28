@@ -1,3 +1,30 @@
+/* Responsive section styles for index2.html */
+.responsive-section {
+    display: flex;
+    padding-top: 5px;
+    gap: 20px;
+}
+
+.responsive-section > div {
+    width: 50%;
+}
+
+.responsive-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .responsive-section {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    .responsive-section > div {
+        width: 100%;
+    }
+}
 /* Universal Selector */
 * {
     margin: 0;

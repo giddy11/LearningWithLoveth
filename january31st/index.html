@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InstantWP Website</title>
 </head>
@@ -10,17 +11,55 @@
   .top-header {
     display: flex;
     justify-content: space-between;
-    padding-right: 50px;
-    padding-left: 50px;
+  }
+
+  .down-header {
+    display: flex;
+    gap: 30px;
+  }
+
+  .child-1 {
+    display: flex;
+    gap: 25px;
+  }
+
+  .child-1b {
+    /* display: block; */
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+
+  header {
+    padding-right: 100px;
+    padding-left: 100px;
   }
 </style>
 <body>
   <header>
     <div class="top-header">
-      <div>child 1</div>
-      <div>child 2</div>
+      <div class="child-1">
+        <div class="child-1a">
+          <i class="bicycle fa-solid fa-motorcycle" style="font-size: 50px;"></i>
+        </div>
+        <div class="child-1b">
+          <span style="font-weight: bold; font-size: 30px;">InstantWP</span> <br>
+          <span>Your local WordPress installation</span>
+        </div>
+      </div>
+      <div>
+        <img src="https://instantwp.com/wp-content/uploads/2017/11/web-banner.png" alt="">
+      </div>
     </div>
-    <div class="down-header">Children 2</div>
+    <div class="down-header">
+      <a href="" style="text-decoration: none;">Home</a>
+      <a href="" style="text-decoration: none;">Downloads</a>
+      <a href="" style="text-decoration: none;">About</a>
+      <a href="" style="text-decoration: none;">FAQ</a>
+      <a href="" style="text-decoration: none;">Screenshots</a>
+      <a href="" style="text-decoration: none;">Documentation</a>
+      <a href="" style="text-decoration: none;">Support</a>
+      <a href="" style="text-decoration: none;">WordPress Resources</a>
+    </div>
   </header>
 </body>
 </html>

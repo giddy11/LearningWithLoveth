@@ -1,0 +1,31 @@
+.hero {
+    text-align: left;
+    margin-top: 70px;
+}
+
+.stack h2 {
+    font-size: 2rem;
+}
+
+.muted {
+    color: #6b7280;
+}
+
+.layout-grid {
+    grid-template-columns: 2fr 1fr;
+    /* gap: var(--space-2); */
+}
+
+.features {
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.sidebar ul {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+/* .sidebar li {
+    margin: .3rem 0;
+} */

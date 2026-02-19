@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fluid Typography</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Fluid Typography</h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Layout</a></li>
+            <li><a href="grid.html">Card Grid</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="typography.html" aria-current="page">Typography</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="table.html">Table</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <article class="prose card">
+        <h1>Using <code>clamp()</code> for fluid sizes</h1>
+        <p class="muted">Font sizes and spacing scale smoothly with the viewport — readable on phones and comfortable on desktops.</p>
+        <h2>Why fluid type?</h2>
+        <p>Fixed breakpoints can cause awkward jumps. With <code>clamp(min, preferred, max)</code>, sizes grow within a safe range. Try resizing this page.</p>
+        <h3>Guidelines</h3>
+        <ul>
+          <li>Start with mobile‑first sizes.</li>
+          <li>Use <code>ch</code> width for readable paragraphs.</li>
+          <li>Don’t let lines get too long.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, libero. Itaque, similique aspernatur. Voluptas temporibus quasi at? Aut velit exercitationem minus dolores id deleniti neque nostrum reiciendis accusamus. Tenetur, sequi.</p>
+        <blockquote>Good type is invisible — it supports the content.</blockquote>
+        <p>Resize to see heading and paragraph sizes adjust without media queries.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Clamp for smooth scaling • Better readability</div>
+    </footer>
+  </body>
+  </html>

@@ -1,0 +1,11 @@
+.hero { text-align: left; }
+.hero .actions { margin-top: var(--space-2); }
+
+.layout-grid { grid-template-columns: 1fr; gap: var(--space-2); }
+@media (min-width: 768px) { .layout-grid { grid-template-columns: 2fr 1fr; } }
+
+.features { grid-template-columns: 1fr; margin-top: var(--space-2); }
+@media (min-width: 600px) { .features { grid-template-columns: repeat(3, 1fr); } }
+
+.sidebar ul { margin: 0; padding-left: 1.1rem; }
+.sidebar li { margin: .3rem 0; }

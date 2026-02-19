@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Card Grid</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/grid.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Responsive Card Grid</h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Layout</a></li>
+            <li><a href="grid.html" aria-current="page">Card Grid</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="table.html">Table</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h2>Auto‑fitting grid — no media queries</h2>
+      <p class="muted">The grid uses <code>repeat(auto-fit, minmax(...))</code> to flow cards. Resize the window to watch the number of columns change automatically.</p>
+
+      <div class="card-grid">
+        <article class="card"><img src="https://picsum.photos/seed/1/600/360" alt="Random"/><h3>Card One</h3><p>Content adapts with the grid track width.</p></article>
+        <article class="card"><img src="https://picsum.photos/seed/2/600/360" alt="Random"/><h3>Card Two</h3><p>Auto‑fit squeezes or adds columns as space allows.</p></article>
+        <article class="card"><img src="https://picsum.photos/seed/3/600/360" alt="Random"/><h3>Card Three</h3><p>Min track width prevents cards getting too small.</p></article>
+        <article class="card"><img src="https://picsum.photos/seed/4/600/360" alt="Random"/><h3>Card Four</h3><p>Max track width ensures even distribution.</p></article>
+        <article class="card"><img src="https://picsum.photos/seed/5/600/360" alt="Random"/><h3>Card Five</h3><p>Images are responsive with max‑width 100%.</p></article>
+        <article class="card"><img src="https://picsum.photos/seed/6/600/360" alt="Random"/><h3>Card Six</h3><p>Great beginner pattern for galleries.</p></article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Grid with auto‑fit • No breakpoints needed</div>
+    </footer>
+  </body>
+  </html>

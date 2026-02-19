@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/images.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Responsive Images</h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Layout</a></li>
+            <li><a href="grid.html">Card Grid</a></li>
+            <li><a href="images.html" aria-current="page">Images</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="table.html">Table</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section stack">
+      <section class="card stack">
+        <h2>1) Fluid image</h2>
+        <p class="muted">The image scales down, never exceeding its container width.</p>
+        <img src="https://picsum.photos/id/1015/1200/600" alt="Landscape" />
+      </section>
+
+      <section class="card stack">
+        <h2>2) Srcset + sizes</h2>
+        <p class="muted">The browser picks the best file for the viewport width.</p>
+        <img 
+          src="https://picsum.photos/id/1025/1200/600"
+          srcset="https://picsum.photos/id/1025/480/240 480w,
+                  https://picsum.photos/id/1025/800/400 800w,
+                  https://picsum.photos/id/1025/1200/600 1200w"
+          sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px"
+          alt="Dog" />
+      </section>
+
+      <section class="card stack">
+        <h2>3) Art direction with picture</h2>
+        <p class="muted">Swap to a tighter crop on small screens.</p>
+        <picture>
+          <source media="(max-width: 600px)" srcset="https://picsum.photos/id/1040/600/800" />
+          <source media="(min-width: 601px)" srcset="https://picsum.photos/id/1040/1200/600" />
+          <img src="https://picsum.photos/id/1040/1200/600" alt="Forest" />
+        </picture>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Images scale fluidly • Right file for the job</div>
+    </footer>
+  </body>
+  </html>

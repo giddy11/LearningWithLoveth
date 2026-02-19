@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Layout Demo</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Responsive Layout (Mobile‑first)</h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html" aria-current="page">Layout</a></li>
+            <li><a href="grid.html">Card Grid</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="table.html">Table</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero section">
+        <div class="stack">
+          <span class="badge">Mobile‑first</span>
+          <h2>Build once, adapt everywhere</h2>
+          <p class="muted">Resize the viewport to see how the layout adapts from a single column to a two‑column design using CSS Grid and media queries.</p>
+          <div class="actions">
+            <a class="btn" href="grid.html">Try the Grid Demo</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout section">
+        <div class="grid layout-grid">
+          <article class="card content">
+            <h3>Content Area</h3>
+            <p>This area takes the full width on small screens. From tablet sizes and up, it shares space with the sidebar. On larger desktops it gets more room.</p>
+            <div class="grid features">
+              <div class="card"><strong>Fluid</strong><br/>Uses percentage widths and flexible tracks.</div>
+              <div class="card"><strong>Accessible</strong><br/>Readable spacing and contrast.</div>
+              <div class="card"><strong>Simple</strong><br/>Only CSS — no JS needed.</div>
+            </div>
+          </article>
+
+          <aside class="card sidebar">
+            <h3>Sidebar</h3>
+            <p>Stacks below content on small screens, moves to the right on wider screens.</p>
+            <ul>
+              <li>Stack on mobile</li>
+              <li>Two columns on tablet</li>
+              <li>Comfortable gaps</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Responsive demos • External CSS • Beginner‑friendly</div>
+    </footer>
+  </body>
+  </html>

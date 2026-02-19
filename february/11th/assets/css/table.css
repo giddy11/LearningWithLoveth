@@ -1,0 +1,14 @@
+.table-wrap { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .75rem; border-bottom: 1px solid var(--border); text-align: left; }
+thead th { background: #f8fafc; color: #374151; position: sticky; top: 0; }
+
+/* Mobile: stack rows as cards */
+@media (max-width: 640px) {
+  thead { display: none; }
+  table, tbody, tr, td { display: block; width: 100%; }
+  tr { margin-bottom: var(--space-2); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  td { border: none; border-bottom: 1px solid var(--border); }
+  td:last-child { border-bottom: none; }
+  td::before { content: attr(data-label) ": "; font-weight: 600; display: inline-block; min-width: 7ch; color: #374151; }
+}

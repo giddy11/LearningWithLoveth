@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Table</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/table.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Responsive Table</h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Layout</a></li>
+            <li><a href="grid.html">Card Grid</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="table.html" aria-current="page">Table</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="card">
+        <h2>Stack the table on small screens</h2>
+        <p class="muted">On phones, each row becomes a card. On tablets and desktops, it’s a normal table.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Product">Widget A</td>
+                <td data-label="Price">$19.99</td>
+                <td data-label="Status">Active</td>
+                <td data-label="Stock">120</td>
+              </tr>
+              <tr>
+                <td data-label="Product">Widget B</td>
+                <td data-label="Price">$24.99</td>
+                <td data-label="Status">Backorder</td>
+                <td data-label="Stock">0</td>
+              </tr>
+              <tr>
+                <td data-label="Product">Widget C</td>
+                <td data-label="Price">$9.99</td>
+                <td data-label="Status">Inactive</td>
+                <td data-label="Stock">35</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Accessible labels • Clean stacking pattern</div>
+    </footer>
+  </body>
+  </html>

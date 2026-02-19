@@ -12,14 +12,40 @@
 }
 
 .layout-grid {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
+    /* background-color: green; */
     /* gap: var(--space-2); */
 }
 
+@media (min-width: 700px) {
+        .layout-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: 1fr 1fr 1fr; */
+    }
+}
+
+
 .features {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* background-color: red; */
     /* grid-template-columns: 1fr 1fr 1fr; */
 }
+
+@media (min-width: 600px) {
+        .features {
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: 1fr 1fr 1fr; */
+    }
+}
+
+
+
+/* 
+    min-width: 600 >>>> screen size of 600px and above should take the style in this media query
+
+    max-width: 600 >>>> screen size of 600px and below should take the style in this media query
+*/
 
 .sidebar ul {
     margin: 0;

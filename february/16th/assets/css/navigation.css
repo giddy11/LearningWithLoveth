@@ -1,0 +1,14 @@
+.nav-demo {
+    background-color: yellow;
+}
+
+
+.brand-and-toggle {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hamb {
+    display: none;
+}

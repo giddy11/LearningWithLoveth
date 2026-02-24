@@ -7,10 +7,6 @@
     font-size: 2rem;
 }
 
-.muted {
-    color: #6b7280;
-}
-
 .layout-grid {
     grid-template-columns: 1fr;
     /* background-color: green; */

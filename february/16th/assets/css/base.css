@@ -96,6 +96,10 @@ h1.site-title {
     padding: 0.2rem 0.5rem;
 }
 
+.muted {
+    color: #6b7280;
+}
+
 .btn {
     background-color: var(--brand);
     text-decoration: none;

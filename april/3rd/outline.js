@@ -27,6 +27,10 @@
  * 
  * 
  * PROJECT STRUCTURE
+ * Outline - src, main.jsx, app.jsx, index.html
+ * src - main code folder
+ * msin.jsx - 
+ * app.jsx - 
  * 
  * JSX - WHAT IS JSX
  * 

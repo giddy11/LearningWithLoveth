@@ -33,6 +33,7 @@
  * app.jsx - 
  * 
  * JSX - WHAT IS JSX
+ *  = javascript + html
  * 
  * JSX EXAMPLES
  * 
